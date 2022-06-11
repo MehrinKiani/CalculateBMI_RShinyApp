@@ -1,5 +1,6 @@
 library(shiny)
 
+
 # Define UI for miles per gallon app ----
 ui <- fluidPage(
   
@@ -26,6 +27,8 @@ server <- function(input, output) {
   output$yourBMI <- renderText({
     paste('Your BMI is',
           input$weight / (input$height/3.28084)^2)})
+ 
+  
   
 }
 
